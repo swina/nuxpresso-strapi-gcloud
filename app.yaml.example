@@ -1,0 +1,17 @@
+app.yaml.example
+
+HOST: '0.0.0.0'
+  NODE_ENV: 'production'
+  ADMIN_JWT_SECRET: _strapi_jwt_secret
+  DATABASE_PORT: 5432
+  DATABASE_CLIENT: 'postgres'
+  DATABASE_HOST: _database_ip_
+  DATABASE_NAME: _database_name
+  DATABASE_USERNAME: database_username
+  DATABASE_PASSWORD: database_password
+  DATABASE_SSL: false
+  INSTANCE_CONNECTION_NAME: <istance name>project:region:cloud_sql</istance name>
+  //ADD OTHER ENVIRONMENT VARIABLE HERE
+
+beta_settings:
+  cloud_sql_instances: <istance name>project:region:cloud_sql</istance name>
