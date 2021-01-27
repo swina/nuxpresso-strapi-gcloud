@@ -1,0 +1,27 @@
+runtime: nodejs12
+
+instance_class: F2
+
+env_variables:
+  HOST: '0.0.0.0'
+  NODE_ENV: 'production'
+  ADMIN_JWT_SECRET: 'fgBQ8RKixEoHKhmyrj6U8zaMQQTob87IKNdfdBnwUYBEKEXCz3wHHYZP+Juuez1MYtBPjIE7gKrySWvavKMjBQ::'
+  DATABASE_PORT: 5432
+  DATABASE_CLIENT: 'postgres'
+  DATABASE_HOST: '34.123.186.7'
+  DATABASE_NAME: 'nuxpresso'
+  DATABASE_USERNAME: 'postgres'
+  DATABASE_PASSWORD: 'PtuJO2GIzGF5vpax'
+  DATABASE_SSL: false
+  INSTANCE_CONNECTION_NAME: 'nuxpresso-strapi:europe-west6:nuxpresso-postgres'
+  CLOUDINARY_API_KEY: '497683817531784'
+  CLOUDINARY_API_SECRET: 'FLG8koCSJ1NFD-j399-jqFdBzoU'
+  CLOUDINARY_CLOUD_NAME: 'moodgiver'
+  MAILGUN_API_KEY: 'key-b673231268da6c645c619c6841cba324'
+  MAILGUN_DOMAIN: 'linux1.moodgiver.com'
+  MAILGUN_FROM: 'web@moodgiver.com'
+  MAILGUN_REPLYTO: 'web@moodgiver.com'
+  SITE_EMAIL: 'web@moodgiver.com'
+
+beta_settings:
+  cloud_sql_instances: 'nuxpresso-strapi:europe-west6:nuxpresso-postgres'

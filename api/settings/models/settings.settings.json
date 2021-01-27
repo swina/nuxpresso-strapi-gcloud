@@ -1,0 +1,117 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "settings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "site_name": {
+      "type": "string",
+      "default": "nuxpresso",
+      "required": true
+    },
+    "site_title": {
+      "type": "string",
+      "default": "Just a nuxpresso site"
+    },
+    "show_title": {
+      "type": "boolean",
+      "default": false
+    },
+    "footer": {
+      "type": "text",
+      "default": "nuxpresso - Created with NuxtJS / Strapi / Tailwindcss "
+    },
+    "logo_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "email": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "header": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "autoimage": {
+      "type": "boolean",
+      "default": true
+    },
+    "breadcrumb": {
+      "type": "boolean",
+      "default": true
+    },
+    "darkmode": {
+      "type": "boolean",
+      "default": true
+    },
+    "authentication": {
+      "type": "boolean",
+      "default": false
+    },
+    "read_more": {
+      "type": "string",
+      "default": "READ MORE"
+    },
+    "scrolltop": {
+      "type": "boolean",
+      "default": true
+    },
+    "body_bg": {
+      "type": "string"
+    },
+    "body_color": {
+      "type": "string"
+    },
+    "body_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "google_analytics": {
+      "type": "string"
+    },
+    "darkmode_bg": {
+      "type": "string"
+    },
+    "darkmode_color": {
+      "type": "string"
+    },
+    "seo_title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "text"
+    }
+  }
+}
