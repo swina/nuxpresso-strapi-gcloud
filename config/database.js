@@ -27,11 +27,7 @@ module.exports = ({ env }) => ({
       options: {
         pool: {
           min: 0,
-          max: 20,
-          acquireTimeoutMillis: 30000,
-          createTimeoutMillis: 30000,
-          idleTimeoutMillis : 30000,
-          createRetryIntervalMillis :3000
+          max: 20
         }
       }
     },
