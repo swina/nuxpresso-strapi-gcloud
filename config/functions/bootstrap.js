@@ -31,6 +31,7 @@ const { blocks } = require ( '../../data/blocks' )
 const { elements } = require ( '../../data/elements' )
 const createSeedData = async () => {
   console.log ( 'Import data ...')
+  
   const componentsPromises = blocks.map(({
     ...rest
   }) => {
@@ -38,7 +39,7 @@ const createSeedData = async () => {
       ...rest
     });
   });
-
+  
   const articlesPromises = articles.map(({
     ...rest
   }) => {
@@ -47,14 +48,14 @@ const createSeedData = async () => {
     });
   });
 
-  await Promise.all(componentsPromises);
+  //await Promise.all(componentsPromises);
   
-  console.log ( 'Blocks imported.')
+  //console.log ( 'Blocks imported.')
 
   await Promise.all(articlesPromises);
 
   console.log ( 'Articles imported')
-
+  
   const elementsPromises = await strapi.query('elements').create( elements );
   console.log ( 'Elements imported.')
   const settingsPromises = await strapi.query('settings').create( settings );

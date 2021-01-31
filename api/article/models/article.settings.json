@@ -5,6 +5,7 @@
     "name": "Article",
     "description": ""
   },
+ 
   "options": {
     "increments": true,
     "timestamps": true,
@@ -100,7 +101,7 @@
     "blocks": {
       "type": "json"
     },
-    "featured_img" : {
+    "featured_img": {
       "type": "json"
     }
   }
